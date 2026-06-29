@@ -14,15 +14,24 @@ The backend is developed using Spring Boot REST APIs, the frontend uses Angular,
 
 ## ✨ Features
 
-- Student Registration
-- Student Management
-- Seat Booking
-- Seat Availability
-- Admin Dashboard
-- Student Dashboard
-- REST APIs
-- MySQL Database
-- Responsive UI
+* 📚 Student Registration & Management
+* 🪑 Smart Seat Booking System
+* 📊 Live Seat Availability Dashboard
+* 👨‍💼 Admin Dashboard
+* 🔍 Student Search by Name, Mobile, Seat Number & Student Code
+* 💰 Revenue Dashboard
+* 💳 Fee & Payment Management
+* 🆔 Auto Student Code Generation
+* 🌐 Responsive Angular Frontend
+* ⚙️ Spring Boot REST APIs
+* 🗄️ MySQL Database Integration
+* ☁️ AWS EC2 Deployment
+* 🛢️ Amazon RDS Integration
+* 🌍 DuckDNS Public Domain
+* 🔀 Nginx Reverse Proxy
+* 📈 Amazon CloudWatch Monitoring
+* 🚨 CloudWatch CPU Alarm
+* 📧 Amazon SNS Email Notifications
 
 ---
 
