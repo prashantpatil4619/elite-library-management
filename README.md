@@ -207,6 +207,7 @@ ng serve
 * Nginx – Reverse Proxy
 * DuckDNS – Public Domain
 * AWS Security Groups – Network Security
+* Let's Encrypt SSL – Secure HTTPS Communication
 
 
 ## 🔮 Future Enhancements
