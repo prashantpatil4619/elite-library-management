@@ -52,18 +52,31 @@ The backend is developed using Spring Boot REST APIs, the frontend uses Angular,
 
 ## 🏗️ Project Architecture
 
-User
-↓
-DuckDNS Domain
-↓
-Nginx Reverse Proxy
-↓
-Spring Boot Backend (AWS EC2)
-↓
-Amazon RDS (MySQL)
+```text
+                 User
+                   │
+                   ▼
+          DuckDNS Domain
+                   │
+                   ▼
+        Nginx Reverse Proxy
+                   │
+                   ▼
+ Spring Boot Backend (AWS EC2)
+                   │
+                   ▼
+        Amazon RDS (MySQL)
 
-Monitoring:
-CloudWatch → CloudWatch Alarm → Amazon SNS Email Notification
+Monitoring
+
+CloudWatch
+      │
+      ▼
+CloudWatch Alarm
+      │
+      ▼
+Amazon SNS Email Notification
+```
 
 
 ---
