@@ -252,8 +252,10 @@ This architecture illustrates the deployment of the Elite Library Management Sys
 
 **Prashant Patil**
 
-GitHub:
+### GitHub Profile
+
 https://github.com/prashantpatil4619
 
-Project Repository:
+### Project Repository
+
 https://github.com/prashantpatil4619/elite-library-management
