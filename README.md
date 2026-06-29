@@ -168,7 +168,7 @@ http://localhost:8081
 
 https://elitelibrary.duckdns.org
 
-```
+
 ## 🏗️ Project Architecture
 
 ![AWS Architecture](architecture/aws-architecture.png)
