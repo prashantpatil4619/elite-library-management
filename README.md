@@ -153,6 +153,21 @@ https://elitelibrary.duckdns.org
 
 This architecture illustrates the deployment of the Elite Library Management System on AWS using Amazon EC2, Amazon RDS, Nginx Reverse Proxy, DuckDNS, Let's Encrypt SSL, Amazon CloudWatch, CloudWatch Alarm, and Amazon SNS.
 
+## 🚀 Deployment Highlights
+
+* Spring Boot backend deployed on **Amazon EC2**.
+* Configured the backend as a **systemd service** for automatic startup after EC2 reboot.
+* Angular application built using **production build (`ng build`)** and deployed as static files using **Nginx**.
+* Configured **Nginx Reverse Proxy** to route frontend traffic and backend API requests.
+* Secured the application using **Let's Encrypt SSL (HTTPS)**.
+* Configured **DuckDNS** for public domain access.
+* Hosted the MySQL database on **Amazon RDS**.
+* Configured **Amazon CloudWatch** for EC2 monitoring.
+* Created **CloudWatch CPU Alarms**.
+* Configured **Amazon SNS** email notifications for alerts.
+* Applied **AWS Security Groups** for secure inbound traffic.
+
+
 ## 🔮 Future Enhancements
 
 * QR Code Attendance System
