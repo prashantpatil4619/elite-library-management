@@ -1,17 +1,23 @@
-# 📸 Project Screenshots
+## 📸 Project Screenshots
 
-## Home Page
+### 🏠 Home Page
 
-![Home](screenshots/homepage.png)
+![Home Page](screenshots/homepage.png)
 
-## Live Seat Status
+---
 
-![Seat Status](screenshots/live-seat-status.png)
+### 🪑 Seat Booking Page
 
-## Admin Dashboard
+![Seat Booking Page](screenshots/seat-booking.png)
 
-![Admin](screenshots/admin-dashboard.png)
+---
 
-## Students List
+### 📊 Live Seat Status
 
-![Students](screenshots/students-list.png)
+![Live Seat Status](screenshots/live-seat-status.png)
+
+---
+
+### 👨‍💼 Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
