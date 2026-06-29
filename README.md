@@ -134,16 +134,17 @@ Backend : http://localhost:8081
 ```text
 https://elitelibrary.duckdns.org
 ```
+## ☁️ AWS Services Used
 
-### ☁️ Deployment Environment
-
-* Hosting: Amazon EC2
-* Reverse Proxy: Nginx
-* SSL Certificate: Let's Encrypt
-* Domain: DuckDNS
-* Database: Amazon RDS (MySQL)
-* Monitoring: Amazon CloudWatch
-* Alerts: Amazon SNS Email Notifications
+* Amazon EC2 – Hosted the Spring Boot Backend
+* Amazon RDS – Managed MySQL Database
+* Amazon CloudWatch – Monitoring EC2 Instance
+* CloudWatch Alarm – CPU Utilization Alerts
+* Amazon SNS – Email Notifications
+* Nginx – Reverse Proxy
+* DuckDNS – Public Domain
+* AWS Security Groups – Network Security
+* Let's Encrypt SSL – Secure HTTPS Communication
 
 
 ## 🏗️ Project Architecture
@@ -197,17 +198,7 @@ ng serve
 ---
 
 
-## ☁️ AWS Services Used
 
-* Amazon EC2 – Hosted the Spring Boot Backend
-* Amazon RDS – Managed MySQL Database
-* Amazon CloudWatch – Monitoring EC2 Instance
-* CloudWatch Alarm – CPU Utilization Alerts
-* Amazon SNS – Email Notifications
-* Nginx – Reverse Proxy
-* DuckDNS – Public Domain
-* AWS Security Groups – Network Security
-* Let's Encrypt SSL – Secure HTTPS Communication
 
 
 ## 🔮 Future Enhancements
