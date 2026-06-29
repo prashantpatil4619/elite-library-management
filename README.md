@@ -175,7 +175,13 @@ CloudWatch Alarm
 Amazon SNS Email Notification
 ```
 
+## 🔮 Future Enhancements
 
+- Email Notifications
+- QR Code Based Entry
+- Online Payment
+- Fine Management
+- Attendance Reports
 ---
 
 ## ⚙️ Installation
@@ -201,13 +207,7 @@ ng serve
 
 
 
-## 🔮 Future Enhancements
 
-- Email Notifications
-- QR Code Based Entry
-- Online Payment
-- Fine Management
-- Attendance Reports
 
 ---
 
