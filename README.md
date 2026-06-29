@@ -81,14 +81,17 @@ ng serve
 
 ---
 
-## ☁️ Deployment
+## ☁️ AWS Services Used
 
-- AWS EC2
-- Amazon RDS
-- Spring Boot
-- Angular
+* Amazon EC2 – Hosted the Spring Boot backend
+* Amazon RDS – Managed MySQL database
+* Amazon CloudWatch – Monitored EC2 instance metrics
+* CloudWatch Alarm – CPU utilization alert
+* Amazon SNS – Email notifications for alarms
+* Nginx – Reverse proxy configuration
+* DuckDNS – Public domain access
+* AWS Security Groups – Controlled inbound and outbound traffic
 
----
 
 ## 🔮 Future Enhancements
 
