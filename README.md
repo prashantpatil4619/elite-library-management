@@ -184,39 +184,6 @@ Amazon SNS Email Notification
 - Attendance Reports
 ---
 
-## ⚙️ Installation
-
-### Backend
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-ng serve
-```
-
----
-
-
-
-
-
-
-
----
-
-## 👨‍💻 Author
-
-**Prashant Patil**
-
-GitHub:
----
 
 ## 📸 Project Screenshots
 
@@ -242,8 +209,15 @@ GitHub:
 
 ![Admin Dashboard](screenshots/admin-dashboard.png)
 
+
+
 ---
 
 ### 👨‍🎓 Student List
 
 ![Student List](screenshots/student-list.png)
+
+
+## 👨‍💻 Author
+
+**Prashant Patil**
