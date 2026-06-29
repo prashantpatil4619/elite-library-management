@@ -140,6 +140,18 @@ GitHub:
 
 ![Admin Dashboard](screenshots/admin-dashboard.png)
 
+## ☁️ AWS Services Used
+
+* Amazon EC2 – Hosted the Spring Boot Backend
+* Amazon RDS – Managed MySQL Database
+* Amazon CloudWatch – Monitoring EC2 Instance
+* CloudWatch Alarm – CPU Utilization Alerts
+* Amazon SNS – Email Notifications
+* Nginx – Reverse Proxy
+* DuckDNS – Public Domain
+* AWS Security Groups – Network Security
+
+
 ---
 
 ### 👨‍🎓 Student List
