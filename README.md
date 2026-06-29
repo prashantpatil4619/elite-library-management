@@ -107,33 +107,74 @@ git clone https://github.com/prashantpatil4619/elite-library-management.git
 cd elite-library-management
 ```
 
-### 2. Run the Backend
+### 2. Backend Setup
 
 ```bash
 cd backend
-./mvnw spring-boot:run
+mvn clean package
+java -jar target/library-management-0.0.1-SNAPSHOT.jar
 ```
 
-### 3. Run the Frontend
+### 3. Frontend Setup
 
 ```bash
 cd frontend
 npm install
-ng serve
+ng build
 ```
 
-### 4. Local Access
+### 4. Deploy Angular Build
+
+Copy the generated files from:
 
 ```text
-Frontend: http://localhost:4200
-Backend : http://localhost:8081
+dist/elite-library/browser
 ```
 
-### 5. Live Deployment
+to the Nginx web root:
 
 ```text
+/usr/share/nginx/html
+```
+
+### 5. Start Nginx
+
+```bash
+sudo systemctl restart nginx
+```
+
+### 6. Local Development
+
+**Frontend**
+
+```text
+http://localhost:4200
+```
+
+**Backend**
+
+```text
+http://localhost:8081
+```
+
+### 7. Production Deployment
+
+* Spring Boot runs as a **systemd service** on Amazon EC2.
+* Angular is deployed as **static files** and served by **Nginx**.
+* HTTPS is enabled using **Let's Encrypt SSL**.
+* Public access is provided through **DuckDNS**.
+
+### 🌐 Live URL
+
 https://elitelibrary.duckdns.org
+
 ```
+## 🏗️ Project Architecture
+
+![AWS Architecture](architecture/aws-architecture.png)
+
+This architecture illustrates the deployment of the Elite Library Management System on AWS using Amazon EC2, Amazon RDS, Nginx Reverse Proxy, DuckDNS, Let's Encrypt SSL, Amazon CloudWatch, CloudWatch Alarm, and Amazon SNS.
+
 ## ☁️ AWS Services Used
 
 * Amazon EC2 – Hosted the Spring Boot Backend
@@ -145,13 +186,6 @@ https://elitelibrary.duckdns.org
 * DuckDNS – Public Domain
 * AWS Security Groups – Network Security
 * Let's Encrypt SSL – Secure HTTPS Communication
-
-
-## 🏗️ Project Architecture
-
-![AWS Architecture](architecture/aws-architecture.png)
-
-This architecture illustrates the deployment of the Elite Library Management System on AWS using Amazon EC2, Amazon RDS, Nginx Reverse Proxy, DuckDNS, Let's Encrypt SSL, Amazon CloudWatch, CloudWatch Alarm, and Amazon SNS.
 
 ## 🚀 Deployment Highlights
 
