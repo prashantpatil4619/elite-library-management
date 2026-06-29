@@ -100,16 +100,17 @@ ng serve
 
 ---
 
+
 ## ☁️ AWS Services Used
 
-* Amazon EC2 – Hosted the Spring Boot backend
-* Amazon RDS – Managed MySQL database
-* Amazon CloudWatch – Monitored EC2 instance metrics
-* CloudWatch Alarm – CPU utilization alert
-* Amazon SNS – Email notifications for alarms
-* Nginx – Reverse proxy configuration
-* DuckDNS – Public domain access
-* AWS Security Groups – Controlled inbound and outbound traffic
+* Amazon EC2 – Hosted the Spring Boot Backend
+* Amazon RDS – Managed MySQL Database
+* Amazon CloudWatch – Monitoring EC2 Instance
+* CloudWatch Alarm – CPU Utilization Alerts
+* Amazon SNS – Email Notifications
+* Nginx – Reverse Proxy
+* DuckDNS – Public Domain
+* AWS Security Groups – Network Security
 
 
 ## 🔮 Future Enhancements
@@ -152,18 +153,6 @@ GitHub:
 ### 👨‍💼 Admin Dashboard
 
 ![Admin Dashboard](screenshots/admin-dashboard.png)
-
-## ☁️ AWS Services Used
-
-* Amazon EC2 – Hosted the Spring Boot Backend
-* Amazon RDS – Managed MySQL Database
-* Amazon CloudWatch – Monitoring EC2 Instance
-* CloudWatch Alarm – CPU Utilization Alerts
-* Amazon SNS – Email Notifications
-* Nginx – Reverse Proxy
-* DuckDNS – Public Domain
-* AWS Security Groups – Network Security
-
 
 ---
 
