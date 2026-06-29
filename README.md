@@ -105,3 +105,28 @@ ng serve
 **Prashant Patil**
 
 GitHub:
+---
+
+# 📸 Project Screenshots
+
+## 🏠 Home Page
+
+![Home Page](screenshots/homepage.png)
+
+---
+
+## 📊 Live Seat Status
+
+![Live Seat Status](screenshots/live-seat-status.png)
+
+---
+
+## 👨‍💼 Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+---
+
+## 👨‍🎓 Student List
+
+![Student List](screenshots/student-list.png)
