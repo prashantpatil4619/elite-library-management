@@ -1,0 +1,331 @@
+<div
+  class="login-page"
+  *ngIf="!isLoggedIn">
+
+  <img
+    src="/hm.jpeg"
+    class="login-bg">
+
+  <div class="login-overlay">
+
+    <div class="login-left">
+
+      <h1>
+        ELITE LIBRARY
+      </h1>
+
+      <p>
+        Admin Control Panel
+      </p>
+
+      <span>
+        Smart • Secure • Professional
+      </span>
+
+    </div>
+
+    <div class="login-box">
+
+      <h2>
+        Admin Login
+      </h2>
+
+      <input
+        type="text"
+        placeholder="Enter Username"
+        class="form-control mb-3"
+        [formControl]="
+        loginForm.get('username')
+      ">
+
+      <input
+        type="password"
+        placeholder="Enter Password"
+        class="form-control mb-3"
+        [formControl]="
+        loginForm.get('password')
+      ">
+
+      <button
+        class="login-btn"
+        (click)="login()">
+
+        Login
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- DASHBOARD -->
+
+<div
+  class="dashboard"
+  *ngIf="isLoggedIn">
+
+  <div class="top-bar">
+
+    <div>
+
+      <h2>
+        Elite Library Dashboard
+      </h2>
+
+      <p>
+        Manage Students & Payments
+      </p>
+
+    </div>
+
+    <button
+      class="logout-btn"
+      (click)="logout()">
+
+      Logout
+
+    </button>
+
+  </div>
+
+  <!-- SEARCH -->
+
+  <div class="search-section">
+
+    <input
+      type="text"
+      placeholder="
+      Search Name,
+      Mobile,
+      Seat,
+      Student Code
+      "
+      class="search-box"
+      [(ngModel)]="
+      searchText
+      "
+      (input)="
+      searchStudent()
+    ">
+
+  </div>
+
+  <!-- CARDS -->
+
+  <div class="cards">
+
+    <div class="card-box green">
+
+      <h3>
+        ₹1500 Booked
+      </h3>
+
+      <p>
+        {{
+          dashboardStats
+          ?.premiumBooked || 0
+        }}
+      </p>
+
+    </div>
+
+    <div class="card-box blue">
+
+      <h3>
+        ₹1500 Remaining
+      </h3>
+
+      <p>
+        {{
+          dashboardStats
+          ?.premiumRemaining || 0
+        }}
+      </p>
+
+    </div>
+
+    <div class="card-box orange">
+
+      <h3>
+        ₹1200 Booked
+      </h3>
+
+      <p>
+        {{
+          dashboardStats
+          ?.normalBooked || 0
+        }}
+      </p>
+
+    </div>
+
+    <div class="card-box purple">
+
+      <h3>
+        ₹1200 Remaining
+      </h3>
+
+      <p>
+        {{
+          dashboardStats
+          ?.normalRemaining || 0
+        }}
+      </p>
+
+    </div>
+
+    <div class="card-box dark">
+
+      <h3>
+        Revenue
+      </h3>
+
+      <p>
+
+        ₹
+        {{
+          dashboardStats
+          ?.revenue || 0
+        }}
+
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- TABLE -->
+
+  <div class="table-box">
+
+    <div class="table-header">
+
+      <h2>
+        Students List
+      </h2>
+
+      <span>
+
+        Total:
+        {{
+          filteredStudents.length
+        }}
+
+      </span>
+
+    </div>
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <th>Name</th>
+
+          <th>Mobile</th>
+
+          <th>Seat</th>
+
+          <th>Fees</th>
+
+          <th>Student Code</th>
+
+          <th>Payment</th>
+
+          <th>Action</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr
+          *ngFor="
+          let s of filteredStudents;
+          trackBy: trackByStudent
+        ">
+
+          <td>
+            {{s.fullName}}
+          </td>
+
+          <td>
+            {{s.mobile}}
+          </td>
+
+          <td>
+            {{s.seatNumber}}
+          </td>
+
+          <td>
+            ₹{{s.fees}}
+          </td>
+
+          <td>
+            {{s.studentCode}}
+          </td>
+
+          <td>
+
+            <button
+
+              *ngIf="
+              s.paymentStatus
+              !== 'PAID'
+            "
+
+              class="waiting-btn"
+
+              (click)="
+              updatePayment(
+                s.id,
+                'PAID'
+              )
+            ">
+
+              WAITING
+
+            </button>
+
+            <button
+
+              *ngIf="
+              s.paymentStatus
+              === 'PAID'
+            "
+
+              class="paid-btn">
+
+              PAID
+
+            </button>
+
+          </td>
+
+          <td>
+
+            <button
+              class="delete-btn"
+              (click)="
+              deleteStudent(s.id)
+            ">
+
+              Delete
+
+            </button>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>

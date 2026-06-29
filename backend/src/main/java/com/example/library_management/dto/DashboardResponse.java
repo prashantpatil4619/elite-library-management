@@ -1,0 +1,64 @@
+package com.example.library_management.dto;
+
+public class DashboardResponse {
+
+    private Long premiumBooked;
+
+     private Long premiumRemaining;
+
+   private Long normalBooked;
+
+     private Long normalRemaining;
+
+   private Integer revenue;
+   private Long totalStudents;
+
+
+    // GETTERS SETTERS
+
+    public Long getPremiumBooked() {
+    return premiumBooked;
+}
+
+public void setPremiumBooked(Long premiumBooked) {
+    this.premiumBooked = premiumBooked;
+}
+
+public Long getPremiumRemaining() {
+    return premiumRemaining;
+}
+
+public void setPremiumRemaining(Long premiumRemaining) {
+    this.premiumRemaining = premiumRemaining;
+}
+
+public Long getNormalBooked() {
+    return normalBooked;
+}
+
+public void setNormalBooked(Long normalBooked) {
+    this.normalBooked = normalBooked;
+}
+
+public Long getNormalRemaining() {
+    return normalRemaining;
+}
+
+public void setNormalRemaining(Long normalRemaining) {
+    this.normalRemaining = normalRemaining;
+}
+
+public Integer getRevenue() {
+    return revenue;
+}
+public Long getTotalStudents() {
+    return totalStudents;
+}
+
+public void setTotalStudents(Long totalStudents) {
+    this.totalStudents = totalStudents;
+}
+public void setRevenue(Integer revenue) {
+    this.revenue = revenue;
+}
+}

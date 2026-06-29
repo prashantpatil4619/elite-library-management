@@ -1,0 +1,144 @@
+<div class="top-bar">
+
+  <h2>
+    Available Seats
+  </h2>
+
+</div>
+
+<div class="container mt-4 mb-5">
+
+  <div class="row">
+
+    <!-- LEFT -->
+
+    <div class="col-md-6">
+
+      <div class="plan-box left-box">
+
+        <h3>
+          ₹1500 Seats (1 - 40)
+        </h3>
+
+        <div class="seat-grid">
+
+          <div
+            *ngFor="let seat of leftSeats"
+            class="seat"
+            [ngClass]="{
+              'booked': isBooked(seat),
+              'available': !isBooked(seat)
+            }"
+            (click)="selectSeat(seat)">
+
+            {{ seat }}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="col-md-6">
+
+      <div class="plan-box right-box">
+
+        <h3>
+          ₹1200 Seats (41 - 80)
+        </h3>
+
+        <div class="seat-grid">
+
+          <div
+            *ngFor="let seat of rightSeats"
+            class="seat"
+            [ngClass]="{
+              'booked': isBooked(seat),
+              'available': !isBooked(seat)
+            }"
+            (click)="selectSeat(seat)">
+
+            {{ seat }}
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <button
+        class="back-home-btn"
+        routerLink="/">
+
+        ⬅ Back To Home
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FORM -->
+
+<div
+  class="booking-modal"
+  *ngIf="showForm">
+
+  <div class="booking-box">
+
+    <h2>
+
+      Book Seat {{ selectedSeat }}
+
+    </h2>
+
+    <form
+      [formGroup]="bookingForm">
+
+      <input
+        type="text"
+        placeholder="Full Name"
+        class="form-control mb-3"
+        formControlName="fullName">
+
+      <input
+        type="text"
+        placeholder="Mobile Number"
+        class="form-control mb-3"
+        formControlName="mobile">
+
+      <input
+        type="email"
+        placeholder="Email"
+        class="form-control mb-4"
+        formControlName="email">
+
+      <button
+        type="button"
+        class="btn btn-success w-100 mb-2"
+        (click)="confirmBooking()">
+
+        Proceed To Payment
+
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-danger w-100"
+        (click)="closeForm()">
+
+        Close
+
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
