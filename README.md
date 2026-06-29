@@ -149,31 +149,9 @@ https://elitelibrary.duckdns.org
 
 ## 🏗️ Project Architecture
 
-```text
-                 User
-                   │
-                   ▼
-          DuckDNS Domain
-                   │
-                   ▼
-        Nginx Reverse Proxy
-                   │
-                   ▼
- Spring Boot Backend (AWS EC2)
-                   │
-                   ▼
-        Amazon RDS (MySQL)
+![AWS Architecture](architecture/aws-architecture.png)
 
-Monitoring
-
-CloudWatch
-      │
-      ▼
-CloudWatch Alarm
-      │
-      ▼
-Amazon SNS Email Notification
-```
+This architecture illustrates the deployment of the Elite Library Management System on AWS using Amazon EC2, Amazon RDS, Nginx Reverse Proxy, DuckDNS, Let's Encrypt SSL, Amazon CloudWatch, CloudWatch Alarm, and Amazon SNS.
 
 ## 🔮 Future Enhancements
 
