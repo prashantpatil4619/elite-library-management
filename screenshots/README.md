@@ -1,3 +1,17 @@
-# Project Screenshots
+# 📸 Project Screenshots
 
-Screenshots of the Elite Library Management System will be added here.
+## Home Page
+
+![Home](screenshots/home-page.png)
+
+## Live Seat Status
+
+![Seat Status](screenshots/live-seat-status.png)
+
+## Admin Dashboard
+
+![Admin](screenshots/admin-dashboard.png)
+
+## Students List
+
+![Students](screenshots/students-list.png)
