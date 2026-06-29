@@ -2,7 +2,7 @@
 
 ## Home Page
 
-![Home](screenshots/home-page.png)
+![Home](screenshots/homepage.png)
 
 ## Live Seat Status
 
