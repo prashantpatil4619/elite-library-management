@@ -87,6 +87,16 @@ elite-library-management
 ├── screenshots/          # Project Screenshots
 └── README.md
 ```
+## 🔗 API Endpoints
+
+| Method | Endpoint           | Purpose              |
+| ------ | ------------------ | -------------------- |
+| GET    | /api/dashboard     | Dashboard Statistics |
+| GET    | /api/students      | Get All Students     |
+| POST   | /api/students      | Register Student     |
+| DELETE | /api/students/{id} | Delete Student       |
+| GET    | /api/seats         | Get Seat Status      |
+| POST   | /api/seats/book    | Book Seat            |
 
 ## 🏗️ Project Architecture
 
