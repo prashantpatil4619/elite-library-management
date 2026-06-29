@@ -177,12 +177,15 @@ Amazon SNS Email Notification
 
 ## 🔮 Future Enhancements
 
-- Email Notifications
-- QR Code Based Entry
-- Online Payment
-- Fine Management
-- Attendance Reports
----
+* QR Code Attendance System
+* Online Payment Gateway
+* Student Login Portal
+* Email Notifications
+* Fine Management
+* Reports & Analytics Dashboard
+* Docker Containerization
+* CI/CD Pipeline using GitHub Actions
+
 
 
 ## 📸 Project Screenshots
