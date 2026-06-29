@@ -98,6 +98,54 @@ elite-library-management
 | GET    | /api/seats         | Get Seat Status      |
 | POST   | /api/seats/book    | Book Seat            |
 
+## 🚀 Installation Guide
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/prashantpatil4619/elite-library-management.git
+cd elite-library-management
+```
+
+### 2. Run the Backend
+
+```bash
+cd backend
+./mvnw spring-boot:run
+```
+
+### 3. Run the Frontend
+
+```bash
+cd frontend
+npm install
+ng serve
+```
+
+### 4. Local Access
+
+```text
+Frontend: http://localhost:4200
+Backend : http://localhost:8081
+```
+
+### 5. Live Deployment
+
+```text
+https://elitelibrary.duckdns.org
+```
+
+### ☁️ Deployment Environment
+
+* Hosting: Amazon EC2
+* Reverse Proxy: Nginx
+* SSL Certificate: Let's Encrypt
+* Domain: DuckDNS
+* Database: Amazon RDS (MySQL)
+* Monitoring: Amazon CloudWatch
+* Alerts: Amazon SNS Email Notifications
+
+
 ## 🏗️ Project Architecture
 
 ```text
