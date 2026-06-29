@@ -107,26 +107,32 @@ ng serve
 GitHub:
 ---
 
-# 📸 Project Screenshots
+## 📸 Project Screenshots
 
-## 🏠 Home Page
+### 🏠 Home Page
 
 ![Home Page](screenshots/homepage.png)
 
 ---
 
-## 📊 Live Seat Status
+### 🪑 Seat Booking Page
+
+![Seat Booking Page](screenshots/seat-booking.png)
+
+---
+
+### 📊 Live Seat Status
 
 ![Live Seat Status](screenshots/live-seat-status.png)
 
 ---
 
-## 👨‍💼 Admin Dashboard
+### 👨‍💼 Admin Dashboard
 
 ![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ---
 
-## 👨‍🎓 Student List
+### 👨‍🎓 Student List
 
 ![Student List](screenshots/student-list.png)
