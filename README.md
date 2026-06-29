@@ -76,6 +76,32 @@ The backend is developed using Spring Boot REST APIs, the frontend uses Angular,
 
 ---
 
+## 📂 Project Structure
+
+```text
+elite-library-management
+│
+├── backend/              # Spring Boot Backend
+├── frontend/             # Angular Frontend
+├── architecture/         # AWS Architecture Diagram
+├── screenshots/          # Project Screenshots
+└── README.md
+```
+
+## 🔗 API Endpoints
+
+| Method | Endpoint           | Purpose              |
+| ------ | ------------------ | -------------------- |
+| GET    | /api/dashboard     | Dashboard Statistics |
+| GET    | /api/students      | Get All Students     |
+| POST   | /api/students      | Register Student     |
+| DELETE | /api/students/{id} | Delete Student       |
+| GET    | /api/seats         | Get Seat Status      |
+| POST   | /api/seats/book    | Book Seat            |
+
+```
+
+
 ## 🏗️ Project Architecture
 
 ```text
