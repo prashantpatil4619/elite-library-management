@@ -35,27 +35,44 @@ The backend is developed using Spring Boot REST APIs, the frontend uses Angular,
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
-- Angular
-- TypeScript
-- HTML
-- CSS
+
+* Angular
+* HTML5
+* CSS3
+* TypeScript
 
 ### Backend
-- Java
-- Spring Boot
-- Spring Data JPA
-- REST API
+
+* Java 17
+* Spring Boot
+* Spring Data JPA
+* REST APIs
 
 ### Database
-- MySQL
-- Amazon RDS
 
-### Cloud
-- AWS EC2
-- Amazon RDS
+* MySQL
+* Amazon RDS
+
+### Cloud & DevOps
+
+* Amazon EC2
+* Nginx Reverse Proxy
+* Amazon CloudWatch
+* CloudWatch Alarm
+* Amazon SNS
+* DuckDNS
+
+### Tools
+
+* Git
+* GitHub
+* Maven
+* Postman
+* VS Code
+* IntelliJ IDEA
 
 ---
 
